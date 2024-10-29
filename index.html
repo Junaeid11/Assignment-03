@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,41 +24,63 @@
     />
     <title>Document</title>
     <style>
-        body {
-          font-family: "Arima", system-ui;
-        }
-        .btn{ background-color: rgba(255, 255, 255, 0.837);
-            color: black;
-        }
-        .btn:hover{
-            background-color: rgb(27, 216, 106);
-        }
-      </style>
-</head>
-<body  class="mx-auto bg-white text-black">
+      body {
+        font-family: "Arima", system-ui;
+      }
+      .btn {
+        background-color: rgba(255, 255, 255, 0.837);
+        color: black;
+      }
+      .btn:hover {
+        background-color: rgb(27, 216, 106);
+      }
+    </style>
+  </head>
+  <body class="mx-auto bg-white text-black">
     <header>
-        <div class="navbar">
-          <div class="navbar-start">
-            <a class="btn btn-ghost text-3xl font-bold"
-              ><img
-                class="w-5"
-                src="./assets/arrow-up-right-01.png"
-                alt=""
-              />Rinterio</a
+      <div class="navbar">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-3xl font-bold"
+            ><img
+              class="w-5"
+              src="./assets/arrow-up-right-01.png"
+              alt=""
+            />Rinterio</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu bg-white menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Service</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle hidden lg:flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu bg-white menu-horizontal px-1">
-              <li><a>Home</a></li>
-              <li><a>Service</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blog</a></li>
-              <li><a>Contact Us</a></li>
-            </ul>
-          </div>
-  
-          <div class="navbar-end">
-            <button class="btn btn-ghost btn-circle hidden lg:flex">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+          <div
+            tabindex="0"
+            role="button"
+            class="btn btn-ghost btn-circle hidden lg:flex"
+          >
+            <div class="indicator">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -70,235 +92,286 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                 />
               </svg>
-            </button>
-            <div
-              tabindex="0"
-              role="button"
-              class="btn btn-ghost btn-circle hidden lg:flex"
-            >
-              <div class="indicator">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-              </div>
             </div>
-            <a class="btn font-bold rounded-xl bg-green-400 hidden lg:flex"
-              >Book Consult<img
-                class="w-5"
-                src="./assets/arrow-up-right-01 (1).png"
-                alt=""
-            /></a>
           </div>
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                class="inline-block h-5 w-5 stroke-current"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-slate-300  rounded-box -w-35 mt-5 -ml-10 shadow"
-            >
-              <li><a>Home</a></li>
-              <li><a>Service</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blog</a></li>
-              <li><a>Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="text-center justify-center p-10">
-          <img class="place-self-center" src="./assets/banner.png" alt="" />
-          <h1 class="font-extrabold text-2xl lg:text-6xl">
-            A barn house of this design has a striking appearance
-          </h1>
-          <p class="p-5 font-medium text-light">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            nobis sit officia qui blanditiis nisi repellat aliquam nam, architecto
-            in.
-          </p>
-          <button class="btn bg-green-300 font-bold text-l">
-            View Details<img
+          <a class="btn font-bold rounded-xl bg-green-400 hidden lg:flex"
+            >Book Consult<img
               class="w-5"
-              src="./assets/arrow-up-right-01.png"
+              src="./assets/arrow-up-right-01 (1).png"
               alt=""
-            />
-          </button>
+          /></a>
         </div>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block h-5 w-5 stroke-current"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-slate-300 rounded-box -w-35 mt-5 -ml-10 shadow"
+          >
+            <li><a>Home</a></li>
+            <li><a>Service</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center justify-center p-10">
+        <img class="place-self-center" src="./assets/banner.png" alt="" />
+        <h1 class="font-extrabold text-2xl lg:text-6xl">
+          A barn house of this design has a striking appearance
+        </h1>
+        <p class="p-5 font-medium text-light">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          nobis sit officia qui blanditiis nisi repellat aliquam nam, architecto
+          in.
+        </p>
+        <button class="btn bg-green-300 font-bold text-l">
+          View Details<img
+            class="w-5"
+            src="./assets/arrow-up-right-01.png"
+            alt=""
+          />
+        </button>
+      </div>
     </header>
     <main>
-        <div class="bg-neutral-200">
-          <section class="grid  place-self-center mx-5 p-5 sm:flex ">
-            <div class="text-center lg:text-left">
-              <button class="btn ">
-                <i class="fa-solid fa-arrow-right"></i>About Us
-              </button>
-              <h1 class="text-4xl py-4 font-bold">
-                We design thoughtful liveable space
-              </h1>
-              <p class="py-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                explicabo, eveniet laborum iusto quod amet unde laboriosam rem
-                provident enim.
-              </p>
-              <div class="p-4 mr-4  lg:w-[80%] w-full  flex center bg-white rounded-xl">
-                <img class="h-16" src="./assets/commercial.png" alt="" />
-                <span class="mt-1 p-2">
-                  <h4 class="text-2xl font-semibold">Commercial</h4>
-                  <p class="text-l">
-                    The burn House capable with its blend of rustic charm an
-                    modern
-                  </p>
-                </span>
-              </div>
-              <div class="p-4 my-4 mr-4  lg:w-[80%] w-full flex center bg-white rounded-xl">
-                <img class="h-16"  src="./assets/commercial.png" alt="" />
-                <span class="mt-1 p-2">
-                  <h4 class="text-2xl font-semibold">Commercial</h4>
-                  <p class="text-l">
-                    The burn House capable with its blend of rustic charm an
-                    modern
-                  </p>
-                </span>
-              </div>
-            </div>
-            <div class="w-full lg:w-[80%] my-5">
-              <img src="./assets/Rectangle.png" alt="" />
-            </div>
-          </section>
-          <div
-            class=" grid bg-white rounded-2xl mx-16 justify-between p-6 text-center lg:flex "
-          >
-            <span class="center justify-center p-4">
-              <i style="font-size: 24px" class="fa-solid fa-message"></i>
-              <h2 class="font-bold text-4xl">235+</h2>
-              <p class="text-xl">Happy Client Review</p>
-            </span>
-            <span class="center justify-center p-4">
-              <i style="font-size: 24px" class="fa-solid fa-briefcase"></i>
-              <h2 class="font-bold text-4xl">50+</h2>
-              <p class="text-xl">Work Department</p>
-            </span>
-            <span class="center justify-center p-4">
-              <i style="font-size: 24px" class="fa-solid fa-user-ninja"></i>
-              <h2 class="font-bold text-4xl">30K+</h2>
-              <p class="text-xl">Our Happy Client</p>
-            </span>
-            <span class="center justify-center p-4">
-              <i style="font-size: 24px" class="fa-solid fa-users"></i>
-              <h2 class="font-bold text-4xl">307+</h2>
-              <p class="text-xl">Staff Member</p>
-            </span>
-          </div>
-  
-          <div class="justify-center place-self-center text-center p-5 mt-8">
+      <div class="bg-neutral-200">
+        <section class="grid place-self-center mx-5 p-5 sm:flex">
+          <div class="text-center lg:text-left">
             <button class="btn">
-              <i class="fa-solid fa-arrow-right"></i>How It Works
+              <i class="fa-solid fa-arrow-right"></i>About Us
             </button>
-            <h1 class="font-bold text-5xl py-3">Our Works Process</h1>
-            <p class="text-xl mx-auto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, animi
-              consequuntur. Voluptas pariatur consequuntur ab ratione repellendus
-              a qui facere!
+            <h1 class="text-4xl py-4 font-bold">
+              We design thoughtful liveable space
+            </h1>
+            <p class="py-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              explicabo, eveniet laborum iusto quod amet unde laboriosam rem
+              provident enim.
             </p>
-            <span class="grid w-full   lg:flex mt-5 mx-auto gap-3">
-              <div class="text-left bg-pink-300 p-4 py-5 rounded-3xl mx-5">
-                <img class="p-2" src="./assets/flow-chart.png" alt="" />
-                <h1 class="font-semibold text-2xl p-2">Concepts</h1>
-                <p class="font-semibold text-gray-600 text-xl">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ratione, obcaecati.
+            <div
+              class="p-4 mr-4 lg:w-[80%] w-full flex center bg-white rounded-xl"
+            >
+              <img class="h-16" src="./assets/commercial.png" alt="" />
+              <span class="mt-1 p-2">
+                <h4 class="text-2xl font-semibold">Commercial</h4>
+                <p class="text-l">
+                  The burn House capable with its blend of rustic charm an
+                  modern
                 </p>
-              </div>
-              <div class="text-left bg-yellow-300 p-4 py-5 rounded-3xl mx-5">
-                <img class="p-2" src="./assets/flow-chart.png" alt="" />
-                <h1 class="font-semibold text-2xl p-2">Concepts</h1>
-                <p class="font-semibold text-gray-600 text-xl">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ratione, obcaecati.
+              </span>
+            </div>
+            <div
+              class="p-4 my-4 mr-4 lg:w-[80%] w-full flex center bg-white rounded-xl"
+            >
+              <img class="h-16" src="./assets/commercial.png" alt="" />
+              <span class="mt-1 p-2">
+                <h4 class="text-2xl font-semibold">Commercial</h4>
+                <p class="text-l">
+                  The burn House capable with its blend of rustic charm an
+                  modern
                 </p>
-              </div>
-              <div class="text-left bg-green-200 p-4 py-5 rounded-3xl mx-5">
-                <img class="p-2" src="./assets/flow-chart.png" alt="" />
-                <h1 class="font-semibold text-2xl p-2">Concepts</h1>
-                <p class="font-semibold text-gray-600 text-xl">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ratione, obcaecati.
-                </p>
-              </div>
-              <div class="text-left bg-blue-200 p-4 py-5 rounded-3xl mx-5">
-                <img class="p-2" src="./assets/flow-chart.png" alt="" />
-                <h1 class="font-semibold text-2xl p-2">Concepts</h1>
-                <p class="font-semibold text-gray-600 text-xl">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ratione, obcaecati.
-                </p>
-              </div>
-            </span>
+              </span>
+            </div>
           </div>
+          <div class="w-full lg:w-[80%] my-5">
+            <img src="./assets/Rectangle.png" alt="" />
+          </div>
+        </section>
+        <div
+          class="grid bg-white rounded-2xl mx-16 justify-between p-6 text-center lg:flex"
+        >
+          <span class="center justify-center p-4">
+            <i style="font-size: 24px" class="fa-solid fa-message"></i>
+            <h2 class="font-bold text-4xl">235+</h2>
+            <p class="text-xl">Happy Client Review</p>
+          </span>
+          <span class="center justify-center p-4">
+            <i style="font-size: 24px" class="fa-solid fa-briefcase"></i>
+            <h2 class="font-bold text-4xl">50+</h2>
+            <p class="text-xl">Work Department</p>
+          </span>
+          <span class="center justify-center p-4">
+            <i style="font-size: 24px" class="fa-solid fa-user-ninja"></i>
+            <h2 class="font-bold text-4xl">30K+</h2>
+            <p class="text-xl">Our Happy Client</p>
+          </span>
+          <span class="center justify-center p-4">
+            <i style="font-size: 24px" class="fa-solid fa-users"></i>
+            <h2 class="font-bold text-4xl">307+</h2>
+            <p class="text-xl">Staff Member</p>
+          </span>
         </div>
-  
-        <section class="justify-center text-center mt-10 max-w-full">
+
+        <div class="justify-center place-self-center text-center p-5 mt-8">
           <button class="btn">
-            <i class="fa-solid fa-arrow-right"></i>Rinterio News
+            <i class="fa-solid fa-arrow-right"></i>How It Works
           </button>
-          <h1 class="text-5xl font-bold">Let's Discuss Next Project</h1>
-          <p class="p-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-            voluptatibus?
+          <h1 class="font-bold text-5xl py-3">Our Works Process</h1>
+          <p class="text-xl mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, animi
+            consequuntur. Voluptas pariatur consequuntur ab ratione repellendus
+            a qui facere!
           </p>
-  
-          <div class="flex my-10 place-self-center">
-            <div class="flex px-8 rounded-lg py-12 bg-white border mx-10">
-              <img src="./assets/img1.png" class="rounded-xl px-5" />
-  
-              <div class="text-left">
+          <span class="grid w-full lg:flex mt-5 mx-auto gap-3">
+            <div class="text-left bg-pink-300 p-4 py-5 rounded-3xl mx-5">
+              <img class="p-2" src="./assets/flow-chart.png" alt="" />
+              <h1 class="font-semibold text-2xl p-2">Concepts</h1>
+              <p class="font-semibold text-gray-600 text-xl">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ratione, obcaecati.
+              </p>
+            </div>
+            <div class="text-left bg-yellow-300 p-4 py-5 rounded-3xl mx-5">
+              <img class="p-2" src="./assets/flow-chart.png" alt="" />
+              <h1 class="font-semibold text-2xl p-2">Concepts</h1>
+              <p class="font-semibold text-gray-600 text-xl">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ratione, obcaecati.
+              </p>
+            </div>
+            <div class="text-left bg-green-200 p-4 py-5 rounded-3xl mx-5">
+              <img class="p-2" src="./assets/flow-chart.png" alt="" />
+              <h1 class="font-semibold text-2xl p-2">Concepts</h1>
+              <p class="font-semibold text-gray-600 text-xl">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ratione, obcaecati.
+              </p>
+            </div>
+            <div class="text-left bg-blue-200 p-4 py-5 rounded-3xl mx-5">
+              <img class="p-2" src="./assets/flow-chart.png" alt="" />
+              <h1 class="font-semibold text-2xl p-2">Concepts</h1>
+              <p class="font-semibold text-gray-600 text-xl">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ratione, obcaecati.
+              </p>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <section class="justify-center text-center mt-10 max-w-full">
+        <button class="btn">
+          <i class="fa-solid fa-arrow-right"></i>Rinterio News
+        </button>
+        <h1 class="text-5xl font-bold">Let's Discuss Next Project</h1>
+        <p class="p-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+          voluptatibus?
+        </p>
+        <div class="mx-auto px-4">
+          <span class="grid place-content-center lg:flex gap-5">
+            <div
+              class="grid w-full rounded-lg p-5 mx-auto bg-white border-2 lg:flex lg:items-center lg:w-[65%]"
+            >
+              <img
+                src="./assets/img1.png"
+                class="rounded-xl w-full lg:w-auto px-2"
+              />
+
+              <div class="text-left lg:ml-5">
                 <h2 class="card-title py-5 text-2xl">
-                  How to choose the Furniture right of your home.
+                  How to choose the right Furniture for your home.
                 </h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
-                <button class="btn font-bold flex text-left">
-                  Book Consult<img
-                    class="w-5"
+                <button class="btn font-bold flex items-center text-left">
+                  Book Consult
+                  <img
+                    class="w-5 ml-2"
                     src="./assets/arrow-up-right-01 (1).png"
-                    alt=""
+                    alt="arrow icon"
                   />
                 </button>
               </div>
             </div>
-            <div class="rounded-lg py-12 bgwhite border">
-              <img src="./assets/img2.png" class="rounded-xl px-5" />
+            <img
+              src="./assets/img2.png"
+              class="rounded-xl w-full lg:w-auto mx-auto mt-5"
+            />
+          </span>
+
+          <span class="grid place-content-center gap-4 lg:flex mt-5">
+            <img
+              class="rounded-xl w-full lg:w-auto mx-auto"
+              src="./assets/img3.png"
+              alt=""
+            />
+
+            <div
+              class="grid w-full lg:w-[55%] rounded-lg p-5 mx-auto bg-white border-2 lg:flex lg:items-center"
+            >
+              <img
+                src="./assets/img1.png"
+                class="rounded-xl w-full lg:w-auto px-2"
+              />
+
+              <div class="text-left lg:ml-5">
+                <h2 class="card-title py-5 text-2xl">
+                  How to choose the right Furniture for your home.
+                </h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <button class="btn font-bold flex items-center text-left">
+                  Book Consult
+                  <img
+                    class="w-5 ml-2"
+                    src="./assets/arrow-up-right-01 (1).png"
+                    alt="arrow icon"
+                  />
+                </button>
+              </div>
+            </div>
+            <img
+              class="rounded-xl w-full lg:w-auto mx-auto mt-5"
+              src="./assets/img5.png"
+              alt=""
+            />
+          </span>
+        </div>
+
+        <!-- <div class="grid place-self-center lg:flex">
+            <div class="grid w-3/4 mx-auto rounded-lg p-5 bg-white border-2 lg:flex ">
+                <img src="./assets/img1.png" class="rounded-xl px-2" />
+    
+                <div class="text-left">
+                  <h2 class="card-title py-5 text-2xl">
+                    How to choose the Furniture right of your home.
+                  </h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <button class="btn font-bold flex text-left">
+                    Book Consult<img
+                      class="w-5"
+                      src="./assets/arrow-up-right-01 (1).png"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+            <div class="rounded-lg py-4 bg-white border place-self-center">
+              <img src="./assets/img2.png" class="rounded-xl w-full" />
             </div>
           </div>
-          <div class="flex justify-between place-self-center">
-            <div class="p-5 rounded-lg bg-white border mt-4 mb-4 mx-5">
-              <img src="./assets/img3.png" class="rounded-xl" />
-            </div>
-            <div class="flex px-2rounded-lg p-5 bg-white border">
+          <div class="grid gap-3 place-self-center lg:flex">
+            <div class="rounded-lg place-self-center">
+                <img src="./assets/img3.png" class="rounded-xl  w-full" />
+              </div>
+            <div class="grid w-3/4 mx-auto rounded-lg p-5 bg-white border-2 lg:flex ">
               <img src="./assets/img4.png" class="rounded-xl px-2" />
   
               <div class="text-left">
@@ -315,191 +388,173 @@
                 </button>
               </div>
             </div>
-            <div class="px-2 rounded-lg py-12 bg-white border mx-10">
-              <img src="./assets/img5.png" class="rounded-xl" />
-            </div>
-          </div>
-        </section>
-  
-
-
-
-
-
-
-        <section class="justify-center text-center mt-10">
-          <button class="btn">
-            <i class="fa-solid fa-arrow-right"></i>Rinterio News
-          </button>
-          <h1 class="text-5xl mt-5 font-bold">Let's Discuss Next Project</h1>
-          <p class="p-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-            voluptatibus?
-          </p>
-          <div class="grid justify-center lg:flex">
-            <div class="card  bg-white border shadow-lg bg-base-200 mx-10 w-96 ">
-              <figure class="px-10 pt-10">
-                <img src="./assets/article2.png" class="rounded-xl" />
-              </figure>
-              <div class="card-body text-left">
-                <span class="flex text-left">
-                  <h1 class="">
-                    <i class="fa-regular fa-calendar-days mx-1"> </i>July14.2024
-                  </h1>
-                  <h1><i class="fa-regular fa-user mx-2"></i>By Admit</h1>
-                </span>
-                <h2 class="card-title">
-                  How to choose the Furniture right of your home.
-                </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <button class="btn font-bold flex text-left">
-                  Book Consult<img
-                    class="w-5"
-                    src="./assets/arrow-up-right-01 (1).png"
-                    alt=""
-                  />
-                </button>
+            <div class="rounded-lg place-self-center py-3 bg-white ">
+                <img src="./assets/img5.png" class="rounded-xl w-full" />
               </div>
-            </div>
-            <div class="card bg-white border shadow-lg bg-base-200 mx-10 w-96">
-              <figure class="px-10 pt-10">
-                <img src="./assets/article3.png" class="rounded-xl" />
-              </figure>
-              <div class="card-body text-left">
-                <span class="flex text-left">
-                  <h1 class="">
-                    <i class="fa-regular fa-calendar-days mx-1"> </i>July14.2024
-                  </h1>
-                  <h1><i class="fa-regular fa-user mx-2"></i>By Admit</h1>
-                </span>
-                <h2 class="card-title">
-                  How to choose the Furniture right of your home.
-                </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <button class="btn font-bold flex text-left">
-                  Book Consult<img
-                    class="w-5"
-                    src="./assets/arrow-up-right-01 (1).png"
-                    alt=""
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="card bg-white border shadow-lg bg-base-200 mx-10 w-96">
-              <figure class="px-10 pt-10">
-                <img src="./assets/article1.png" class="rounded-xl" />
-              </figure>
-              <div class="card-body text-left">
-                <span class="flex text-left">
-                  <h1 class="">
-                    <i class="fa-regular fa-calendar-days mx-1"> </i>July14.2024
-                  </h1>
-                  <h1><i class="fa-regular fa-user mx-2"></i>By Admit</h1>
-                </span>
-                <h2 class="card-title">
-                  How to choose the Furniture right of your home.
-                </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <button class="btn font-bold flex text-left">
-                  Book Consult<img
-                    class="w-5"
-                    src="./assets/arrow-up-right-01 (1).png"
-                    alt=""
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-  
+          </div> -->
+      </section>
 
-
-
-
-
-
-
-
-
-
-
-
-        <section
-          class="justify-center text-center t mt-10 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-center p-10"
-        >
-          <button class="btn">
-            <i class="fa-solid fa-arrow-right"></i>Explore Our latest Works
-          </button>
-          <h1 class="text-5xl mt-2 font-bold">Let's Discuss Next Project</h1>
-          <p class="p-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-            voluptatibus?
-          </p>
-  
-          <div >
-            <input
-              type="text"
-              placeholder="Type here"
-              class="input rounded-2xl input-bordered w-full bg-white max-w-xs lg:mx-10 my-5"
-            />
-            <input
-              type="text"
-              placeholder="Type here"
-              class="input rounded-2xl input-bordered bg-white w-full max-w-xs"
-            />
-            <br />
-            <input
-              type="text"
-              placeholder="Type here"
-              class="input rounded-2xl input-bordered bg-white w-full max-w-xs lg:mx-10 my-5"
-            />
-            <input
-              type="text"
-              placeholder="Type here"
-              class="input rounded-2xl input-bordered bg-white w-full max-w-xs"
-            />
-            <br />
-            <textarea
-              class="textarea textarea-bordered justify-center rounded-3xl mt-2  bg-white max-w-s w-full mx-auto  lg:w-[700px] h-[300px] "
-              placeholder="Bio"
-            ></textarea>
-            <br />
-            <button class="btn text-black font-bold-center bg-white lg:w-1/2 ">
-              Book Consult<img
-                class="w-5"
-                src="./assets/arrow-up-right-01 (1).png"
-                alt=""
-              />
-            </button>
-          </div>
-        </section>
-      </main>
-      <footer class="footer footer-center bg-black text-white rounded p-10">
-        <a class=" flex  text-4xl font-bold"
-          ><img
-            class="w-5"
-            src="./assets/arrow-up-right-01.png"
-            alt=""
-          />Rinterio</a
-        >
-        <p class="text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, minus?
-        </p>
-        <nav class="grid no-underline gap-5 lg:flex ">
-          <a class="link no-underline link-hover">About us</a>
-          <a class="link no-underline link-hover">Contact</a>
-          <a class="link no-underline link-hover">Jobs</a>
-          <a class="link no-underline link-hover">Portfolio</a>
-          <a class="link link-hover">Blogs</a>
-          <a class="link link-hover">Contacts us</a>
-        </nav>
-        <button class="btn flex bg-green-300">
-          Book Consult<img
-            class="w-5"
-            src="./assets/arrow-up-right-01 (1).png"
-            alt=""
-          />
+      <section class="justify-center text-center mt-10">
+        <button class="btn">
+          <i class="fa-solid fa-arrow-right"></i>Rinterio News
         </button>
-      </footer>
-</body>
+        <h1 class="text-5xl mt-5 font-bold">Let's Discuss Next Project</h1>
+        <p class="p-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+          voluptatibus?
+        </p>
+        <div class="grid justify-center lg:flex">
+          <div class="card bg-white border shadow-lg bg-base-200 mx-10 w-96">
+            <figure class="px-10 pt-10">
+              <img src="./assets/article2.png" class="rounded-xl" />
+            </figure>
+            <div class="card-body text-left">
+              <span class="flex text-left">
+                <h1 class="">
+                  <i class="fa-regular fa-calendar-days mx-1"> </i>July14.2024
+                </h1>
+                <h1><i class="fa-regular fa-user mx-2"></i>By Admit</h1>
+              </span>
+              <h2 class="card-title">
+                How to choose the Furniture right of your home.
+              </h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <button class="btn font-bold flex text-left">
+                Book Consult<img
+                  class="w-5"
+                  src="./assets/arrow-up-right-01 (1).png"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+          <div class="card bg-white border shadow-lg bg-base-200 mx-10 w-96">
+            <figure class="px-10 pt-10">
+              <img src="./assets/article3.png" class="rounded-xl" />
+            </figure>
+            <div class="card-body text-left">
+              <span class="flex text-left">
+                <h1 class="">
+                  <i class="fa-regular fa-calendar-days mx-1"> </i>July14.2024
+                </h1>
+                <h1><i class="fa-regular fa-user mx-2"></i>By Admit</h1>
+              </span>
+              <h2 class="card-title">
+                How to choose the Furniture right of your home.
+              </h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <button class="btn font-bold flex text-left">
+                Book Consult<img
+                  class="w-5"
+                  src="./assets/arrow-up-right-01 (1).png"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+          <div class="card bg-white border shadow-lg bg-base-200 mx-10 w-96">
+            <figure class="px-10 pt-10">
+              <img src="./assets/article1.png" class="rounded-xl" />
+            </figure>
+            <div class="card-body text-left">
+              <span class="flex text-left">
+                <h1 class="">
+                  <i class="fa-regular fa-calendar-days mx-1"> </i>July14.2024
+                </h1>
+                <h1><i class="fa-regular fa-user mx-2"></i>By Admit</h1>
+              </span>
+              <h2 class="card-title">
+                How to choose the Furniture right of your home.
+              </h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <button class="btn font-bold flex text-left">
+                Book Consult<img
+                  class="w-5"
+                  src="./assets/arrow-up-right-01 (1).png"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="justify-center text-center t mt-10 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-center p-10"
+      >
+        <button class="btn">
+          <i class="fa-solid fa-arrow-right"></i>Explore Our latest Works
+        </button>
+        <h1 class="text-5xl mt-2 font-bold">Let's Discuss Next Project</h1>
+        <p class="p-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+          voluptatibus?
+        </p>
+
+        <div>
+          <input
+            type="text"
+            placeholder="Type here"
+            class="input rounded-2xl input-bordered w-full bg-white max-w-xs lg:mx-10 my-5"
+          />
+          <input
+            type="text"
+            placeholder="Type here"
+            class="input rounded-2xl input-bordered bg-white w-full max-w-xs"
+          />
+          <br />
+          <input
+            type="text"
+            placeholder="Type here"
+            class="input rounded-2xl input-bordered bg-white w-full max-w-xs lg:mx-10 my-5"
+          />
+          <input
+            type="text"
+            placeholder="Type here"
+            class="input rounded-2xl input-bordered bg-white w-full max-w-xs"
+          />
+          <br />
+          <textarea
+            class="textarea textarea-bordered justify-center rounded-3xl mt-2 bg-white max-w-s w-full mx-auto lg:w-[700px] h-[300px]"
+            placeholder="Bio"
+          ></textarea>
+          <br />
+          <button class="btn text-black font-bold-center bg-white lg:w-1/2">
+            Book Consult<img
+              class="w-5"
+              src="./assets/arrow-up-right-01 (1).png"
+              alt=""
+            />
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer-center bg-black text-white rounded p-10">
+      <a class="flex text-4xl font-bold"
+        ><img
+          class="w-5"
+          src="./assets/arrow-up-right-01.png"
+          alt=""
+        />Rinterio</a
+      >
+      <p class="text-gray-600">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, minus?
+      </p>
+      <nav class="grid no-underline gap-5 lg:flex">
+        <a class="link no-underline link-hover">About us</a>
+        <a class="link no-underline link-hover">Contact</a>
+        <a class="link no-underline link-hover">Jobs</a>
+        <a class="link no-underline link-hover">Portfolio</a>
+        <a class="link link-hover">Blogs</a>
+        <a class="link link-hover">Contacts us</a>
+      </nav>
+      <button class="btn flex bg-green-300">
+        Book Consult<img
+          class="w-5"
+          src="./assets/arrow-up-right-01 (1).png"
+          alt=""
+        />
+      </button>
+    </footer>
+  </body>
 </html>

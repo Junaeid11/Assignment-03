@@ -27,6 +27,12 @@
         body {
           font-family: "Arima", system-ui;
         }
+        .btn{ background-color: rgba(255, 255, 255, 0.837);
+            color: black;
+        }
+        .btn:hover{
+            background-color: rgb(27, 216, 106);
+        }
       </style>
 </head>
 <body  class="mx-auto bg-white text-black">
@@ -42,7 +48,7 @@
             >
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
+            <ul class="menu bg-white menu-horizontal px-1">
               <li><a>Home</a></li>
               <li><a>Service</a></li>
               <li><a>Portfolio</a></li>
@@ -115,7 +121,7 @@
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box w-35 mt-10 shadow"
+              class="menu menu-sm dropdown-content bg-slate-300  rounded-box -w-35 mt-5 -ml-10 shadow"
             >
               <li><a>Home</a></li>
               <li><a>Service</a></li>
@@ -127,7 +133,7 @@
         </div>
         <div class="text-center justify-center p-10">
           <img class="place-self-center" src="./assets/banner.png" alt="" />
-          <h1 class="font-extrabold text-6xl">
+          <h1 class="font-extrabold text-xl lg:text-6xl">
             A barn house of this design has a striking appearance
           </h1>
           <p class="p-5 font-medium text-light">
@@ -146,7 +152,7 @@
     </header>
     <main>
         <div class="bg-neutral-200">
-          <section class="flex place-self-center justify-center mx-5 p-5">
+          <section class="grid  place-self-center justify-center mx-5 p-5 sm:flex ">
             <div class="">
               <button class="btn">
                 <i class="fa-solid fa-arrow-right"></i>About Us
@@ -159,7 +165,7 @@
                 explicabo, eveniet laborum iusto quod amet unde laboriosam rem
                 provident enim.
               </p>
-              <div class="p-4 mr-4 w-[80%] flex center bg-white rounded-xl">
+              <div class="p-4 mr-4 lg:w-[80%] w-full  flex center bg-white rounded-xl">
                 <img src="./assets/commercial.png" alt="" />
                 <span class="mt-1 p-2">
                   <h4 class="text-2xl font-semibold">Commercial</h4>
@@ -169,7 +175,7 @@
                   </p>
                 </span>
               </div>
-              <div class="p-4 my-4 mr-4 w-[80%] flex center bg-white rounded-xl">
+              <div class="p-4 my-4 mr-4  lg:w-[80%] w-full flex center bg-white rounded-xl">
                 <img src="./assets/commercial.png" alt="" />
                 <span class="mt-1 p-2">
                   <h4 class="text-2xl font-semibold">Commercial</h4>
@@ -180,12 +186,12 @@
                 </span>
               </div>
             </div>
-            <div class="w-[80%] my-5">
+            <div class="w-full lg:w-[80%] my-5">
               <img src="./assets/Rectangle.png" alt="" />
             </div>
           </section>
           <div
-            class="bg-white rounded-2xl flex mx-20 justify-between p-6 text-center"
+            class=" grid bg-white rounded-2xl mx-16 justify-between p-6 text-center lg:flex "
           >
             <span class="center justify-center p-4">
               <i style="font-size: 24px" class="fa-solid fa-message"></i>
@@ -214,12 +220,12 @@
               <i class="fa-solid fa-arrow-right"></i>How It Works
             </button>
             <h1 class="font-bold text-5xl py-3">Our Works Process</h1>
-            <p class="text-xl mx-12">
+            <p class="text-xl mx-auto">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, animi
               consequuntur. Voluptas pariatur consequuntur ab ratione repellendus
               a qui facere!
             </p>
-            <span class="flex mt-5 mx-10">
+            <span class="grid w-full   lg:flex mt-5 mx-auto gap-3">
               <div class="text-left bg-pink-300 p-4 py-5 rounded-3xl mx-5">
                 <img class="p-2" src="./assets/flow-chart.png" alt="" />
                 <h1 class="font-semibold text-2xl p-2">Concepts</h1>
@@ -451,7 +457,7 @@
         </section>
       </main>
       <footer class="footer footer-center bg-black text-white rounded p-10">
-        <a class="btn flex btn-ghost text-4xl font-bold"
+        <a class=" flex  text-4xl font-bold"
           ><img
             class="w-5"
             src="./assets/arrow-up-right-01.png"
